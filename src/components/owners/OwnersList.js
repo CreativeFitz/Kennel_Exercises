@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Ownerslist extends Component {
+export default class Ownerslist extends Component {
     render () {
         return (
             <article>
@@ -15,4 +15,3 @@ class Ownerslist extends Component {
         )
     }
 }
-export default Ownerslist;
