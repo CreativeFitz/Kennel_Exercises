@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Ownerslist from '../owners/OwnersList';
+
 
 class EmployeeList extends Component {
     render() {

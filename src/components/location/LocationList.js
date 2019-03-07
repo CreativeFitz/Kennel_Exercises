@@ -6,7 +6,8 @@ class LocationList extends Component {
             <article>
                 <h1>Location List</h1>
                {this.props.locations.map(singleLocation => {
-                   return <p key={singleLocation.id}>{singleLocation.name}</p>
+                   return <p key={singleLocation.id}>{singleLocation.name}
+                   {singleLocation.address}</p>
                })}
             </article>
         );
