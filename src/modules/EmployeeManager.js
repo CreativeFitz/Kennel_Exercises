@@ -1,3 +1,4 @@
+
 const employeeAPIManager = {
     getAllEmployees: () => {
         return fetch("http://localhost:5002/employees")
@@ -8,7 +9,16 @@ const employeeAPIManager = {
             method: "DELETE"
         })
         .then(e => e.json())
-    }
+    },
+    postEmployee(newEmployee) {
+        return fetch("http://localhost:5002/employees", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(newEmployee)
+        }).then(data => data.json())
+      }
 }
 
 export default employeeAPIManager

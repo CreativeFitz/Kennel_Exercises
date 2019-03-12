@@ -1,18 +1,27 @@
 {
   "employees": [
     {
-      "id": 3,
-      "name": "Zoe LeBlanc"
+      "id": 4,
+      "name": "Heboba"
+    },
+    {
+      "name": "Bobby",
+      "locationId": 2,
+      "id": 5
     }
   ],
   "animals": [
     {
-      "id": 5,
-      "name": "Derkins"
+      "name": "Kibasa",
+      "breed": "Big ol Dog",
+      "employeeId": 4,
+      "id": 8
     },
     {
-      "id": 6,
-      "name": "Checkers"
+      "name": "Hamburger",
+      "breed": "Beef",
+      "employeeId": 4,
+      "id": 9
     }
   ],
   "owners": [
@@ -21,16 +30,8 @@
       "name": "Dale"
     },
     {
-      "id": 4,
-      "name": "Sydney"
-    },
-    {
       "id": 6,
       "name": "Michelle"
-    },
-    {
-      "id": 7,
-      "name": "Josh"
     }
   ],
   "locations": [
