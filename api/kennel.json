@@ -1,34 +1,13 @@
 {
   "employees": [
     {
-      "id": 4,
-      "name": "Heboba"
-    },
-    {
-      "name": "Bobby",
+      "name": "Big Bobby",
       "locationId": 2,
-      "id": 5
+      "id": 6
     }
   ],
-  "animals": [
-    {
-      "name": "Kibasa",
-      "breed": "Big ol Dog",
-      "employeeId": 4,
-      "id": 8
-    },
-    {
-      "name": "Hamburger",
-      "breed": "Beef",
-      "employeeId": 4,
-      "id": 9
-    }
-  ],
+  "animals": [],
   "owners": [
-    {
-      "id": 2,
-      "name": "Dale"
-    },
     {
       "id": 6,
       "name": "Michelle"

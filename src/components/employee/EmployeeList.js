@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import "./Employee.css"
+import AnimalCard from '../animal/AnimalCard'
 
 
 class EmployeeList extends Component {
@@ -18,16 +19,19 @@ class EmployeeList extends Component {
             </div>
             <section className="employees">
                 {
-                    this.props.employees.map(employee =>
-                        <div key={employee.id} className="card">
+                    this.props.employees.map(employee =>{
+                        return <div key={employee.id} className="card">
                             <div className="card-body">
                                 <h5 className="card-title">
                                     {employee.name}
                                     <Link className="nav-link" to={`/employees/${employee.id}`}>Details</Link>
+                                    <section>
+                                        {this.props.animals.filter(animal => animal.employeeId === employee.id).map(matchingAnimal =>( <AnimalCard key={matchingAnimal.id} animal={matchingAnimal}/>))}
+                                    </section>
                                 </h5>
                             </div>
                         </div>
-                    )
+                    })
                 }
             </section>
             </React.Fragment>
